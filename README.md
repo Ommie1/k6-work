@@ -4,7 +4,7 @@ Grafana k6 is an open-source, developer-friendly, and extensible load testing to
 
 ## Getting Started
 
-[Clone the code from repository,](https://github.com/Ommie1/k6-work.git)
+Clone the code from repository, https://github.com/Ommie1/k6-work.git
 
 ### Prerequisites
 
@@ -21,26 +21,15 @@ brew install k6
 
 Install VS Code & IntelliJ dependencies,
 
-
 ```
-# create a `package.json` file
-$ npm init --yes
-```
-
-```
-# install the k6 types as dev dependency
-$ npm install --save-dev @types/k6
+create a `package.json` file
+npm init --yes
 ```
 
-
-# create a `package.json` file
-$ npm init --yes
-
-# install the k6 types as dev dependency
-$ npm install --save-dev @types/k6
-
-
-
+```
+install the k6 types as dev dependency
+npm install --save-dev @types/k6
+```
 
 ## Author
 
