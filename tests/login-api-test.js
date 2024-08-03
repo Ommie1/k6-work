@@ -2,6 +2,15 @@
 import http from 'k6/http';
 import { check } from 'k6';
 
+// define configuration
+export const options = {
+  // define thresholds
+  thresholds: {
+    http_req_failed: ['rate<0.01'], // http errors should be less than 1%
+    http_req_duration: ['p(99)<6000'], // 99% of requests should be below 6s
+  },
+};
+
 export default function () {
   // define URL and payload
   const url = 'https://test-api.k6.io/auth/basic/login/';
