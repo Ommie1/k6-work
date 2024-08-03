@@ -1,15 +1,10 @@
 // import necessary module
 import http from 'k6/http';
 import { check } from 'k6';
+// import { performanceThreshold } from '../common/common.js'
 
 // define configuration
-export const options = {
-  // define thresholds
-  thresholds: {
-    http_req_failed: ['rate<0.01'], // http errors should be less than 1%
-    http_req_duration: ['p(99)<6000'], // 99% of requests should be below 6s
-  },
-};
+// export const options = performanceThreshold();
 
 export default function () {
   // define URL and payload
