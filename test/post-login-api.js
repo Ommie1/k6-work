@@ -1,6 +1,7 @@
 // import necessary module
 import http from 'k6/http';
 import { check } from 'k6';
+import { BASE_URL } from '../constant/config.js';
 // import { performanceThreshold } from '../common/common.js'
 
 // define configuration
@@ -8,7 +9,7 @@ import { check } from 'k6';
 
 export default function () {
   // define URL and payload
-  const url = 'https://test-api.k6.io/auth/basic/login/';
+  const url = `${BASE_URL}/auth/basic/login/`;
   const payload = JSON.stringify({
     username: 'test_case',
     password: '1234',

@@ -1,5 +1,5 @@
 export function performanceThreshold() {
-    return {
+    return { 
       // define thresholds
       thresholds: {
         http_req_failed: ['rate<0.01'], // http errors should be less than 1%
